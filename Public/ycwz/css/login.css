@@ -1,0 +1,82 @@
+@font-face { font-family: 'iconfont'; src: url('../dist/fontalbb/iconfont.eot'); src: url('../dist/fontalbb/iconfont.eot?#iefix') format('embedded-opentype'), url('../dist/fontalbb/iconfont.woff') format('woff'), url('../dist/fontalbb/iconfont.ttf') format('truetype'), url('../dist/fontalbb/iconfont.svg#iconfont') format('svg'); }
+
+.dy{ font-family:"iconfont" !important; font-size:16px;font-style:normal; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: 0.2px; -moz-osx-font-smoothing: grayscale; }
+.login{
+    cursor:pointer
+}
+.tc{
+    width: 40%;position: fixed;top:50%;left: 47%;
+    background: white;
+    padding: 0 3%;
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    z-index: 1001;
+    display: none;
+}
+.tc>p:first-of-type img{
+    float: right
+}
+.tc>p:nth-of-type(2){
+    margin-top: 31px;text-align: right;
+    color:#B28950 ;
+}
+.tc>div{
+    border-bottom: 1px solid #ccc;margin-bottom: 10px;height: 40px;
+    color: black;
+}
+.tc>div:first-of-type{
+    margin-top: 30px;
+}
+.tc>div>input{
+    width: 76%;padding-left: 10%;outline: none;border: none;line-height: 28px;
+}
+.tc>div>input::-webkit-input-placeholder{
+    color:#B2B2B2;
+    font-weight: 400;
+}
+.tc>div>input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#B2B2B2;
+    font-weight: 400;
+}
+.tc>div>input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#B2B2B2;
+    font-weight: 400;
+}
+.tc>div>input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+    color:#B2B2B2;
+    font-weight: 400;
+}
+.tc>input{
+    display: block;
+    width: 90%;
+    height: 40px;
+    margin: 0 auto;
+    background: #B28950;
+    color: white;
+    outline: none;
+    border: none;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+.ws{
+    text-align: right;
+    color:#B28950 ;
+}
+@media screen and (min-width: 768px) and (max-width: 932px) {
+    .tc{
+        font-size: 14px;
+    }
+    .tc>div>input {
+        width: 54%;
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 414px) {
+    .tc{
+        font-size: 14px;
+    }
+    .tc>div>input {
+        width: 62%;
+    }
+}

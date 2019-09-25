@@ -1,0 +1,320 @@
+html body{
+    font-family:  汉仪漆黑;
+}
+@media (min-width: 768px) {
+    .form-horizontal .control-label {
+        padding-top: 0px;
+    }
+}
+#avatarSlect{
+    position: absolute;
+    float: left;
+    z-index: 10;
+    opacity: 0;
+    width: 120px;
+    height: 120px;
+    cursor:pointer;
+}
+.header-content{
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.header-img-container{
+    width: 120px;
+    height: 120px;
+    background-color: #b28950;
+    cursor:pointer;
+    position: relative;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.header-img-container img.header{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top:20px;
+    left: 20px;
+}
+.header-name-container{
+    margin-top: 10px;
+    text-align: center;
+}
+.header-name-container input{
+    display: inline;
+    width:6rem;
+    margin-left: 2.5rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #5e6265;
+}
+.header-name-container img{
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.header-name-container button{
+    position: relative;
+    bottom: 0px;
+    vertical-align: middle;
+}
+.header-img-container img.edit-bg{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    border-radius: 50%;
+}
+.header-img-container span{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    bottom: 0px;
+    color: white;
+}
+.section{
+    margin-bottom: 20px;
+}
+.section .row{
+    padding-right: 14%;
+    padding-left: 14%;
+}
+.section .row .header{
+    position: relative;
+    border-bottom: 2px solid #b28950;
+    height: 60px;
+}
+.section .row .header .pull-left{
+    position: absolute;
+    color: #2c2f34;
+    font-size: 16px;
+    font-weight: bold;
+    bottom: 10px;
+}
+.section .row .header .pull-right{
+    position: absolute;
+    font-size: 14px;
+    right: 10px;
+    bottom: 10px;
+}
+.section .row .header .pull-right span{
+    color: #5e6265;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.section .row .header .pull-right img{
+    cursor: pointer;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+}
+.form-control{
+    text-align: center;
+    border: 1px solid #b28950;
+    padding: 0px;
+}
+.form-control[readonly]{
+    text-align: center;
+    background-color: white;
+    border: 0px solid #b28950;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    cursor: default;
+}
+.form-control[readonly]:focus{
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+
+.address-select select[disabled]{
+    text-align: center;
+    background-color: white;
+    border: 0px solid #b28950;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    cursor: default;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+}
+
+.section-detail form img{
+    height: 25px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.btn-edit:hover {
+    color: #fff;
+    background-color: #976928;
+    border-color: #976928;
+}
+.btn-edit {
+    color: #fff;
+    position: absolute;
+    font-size: 16px;
+    right: 10px;
+    bottom: 5px;
+    padding: 3px 12px;
+    background-color: #b28950;
+    border-color: #b28950;
+}
+.btn-baoming:hover {
+    color: #fff;
+    background-color: #976928;
+    border-color: #976928;
+}
+.btn-baoming{
+    color: #fff;
+    width: 100%;
+    font-size: 14px;
+    padding: 3px 12px;
+    background-color: #b28950;
+    border-color: #b28950;
+}
+
+@media (min-width: 360px) {
+    .honor-area{
+        position: relative;
+        width: 100%;
+        height: 120px;
+        /*margin-top: 20px;*/
+        /*border: 1px dashed #b28950;*/
+    }
+}
+@media (min-width: 480px) {
+    .honor-area{
+        position: relative;
+        width: 100%;
+        height: 140px;
+        /*margin-top: 20px;*/
+        /*border: 1px dashed #b28950;*/
+    }
+}
+@media (min-width: 768px) {
+    .form-horizontal .control-label {
+        padding-top: 0px;
+    }
+
+    .honor-area{
+        position: relative;
+        width: 100%;
+        height: 200px;
+        /*margin-top: 20px;*/
+        /*border: 1px dashed #b28950;*/
+    }
+
+}
+.upload-container{
+    height: 90%;
+    width: 100%;
+    margin-top: 20px;
+    border:1px dashed #b28950;
+    background-color: #f2f2f2;
+}
+.upload-container .new-upload{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin-top: 15px;
+    margin-left: 15px;
+    border:1px dashed #b28950;
+    background-color: white;
+}
+
+#uploadHonor{
+    position: absolute;
+    float: left;
+    z-index: 10;
+    top:0px;
+    opacity: 0;
+    width: 100px;
+    height: 100px;
+    cursor:pointer;
+}
+
+.upload-container .new-upload img{
+    width: 30px;
+    height: 30px;
+    margin: 5px 35px;
+}
+.upload-container .new-upload .sczp{
+    width: 100%;
+    text-align: center;
+    line-height: 80%;
+}
+.upload-container .new-upload .small{
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-pagination-bullet-active {
+    background: #b28950;
+    width: 30px;
+    border-radius: 4px;
+}
+.family-detail{
+    margin-top: 20px;
+}
+.family-detail .row{
+    padding-left: 1%;
+    padding-right: 1%;
+    margin: 0px;
+}
+.family-detail .form-group{
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+.family-detail .form-group label{
+    padding-right: 5px;
+    line-height: 34px;
+    white-space:nowrap;
+    font-size: 15px;
+}
+
+.family-detail .form-group input{
+    text-align: left;
+}
+.address-select{
+    margin-top: 20px;
+}
+.address-select .row{
+    padding: 0px;
+    margin: 0px;
+}
+.col-md-4 select{
+    width: 100%;
+    border-radius: 3px;
+    border-color:#b28950;
+}
+
+#detail_address{
+    margin-top: 20px;
+}

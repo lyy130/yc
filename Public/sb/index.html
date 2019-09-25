@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+		<link href="dist/bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/common/main.css">
+		<script src="dist/html5shiv/html5shiv.min.js"></script>
+		<script src="js/common/jquery.min.js"></script>
+		<script src="js/common/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/common/vue.js"></script>
+		<script src="js/common/js2wordcloud.min.js"></script>
+		<title>赛博研究院</title>
+		<style>
+
+		</style>
+	</head>
+
+	<body>
+		<!--顶部通栏-->
+		<header>
+			<div class="container">
+				<div class="row">
+					<div id="top_01" class="top">
+						<div class="col-md-5 col-lg-5 col-sm-5 col-xs-3 ">
+							<img src="img/shouye_pc/logo1.png" style="width: 100%;height: 100%;position: relative;bottom: 15px;right: 21px;" class="hidden-xs">
+							<img src="img/shouye_yd/logo.png" style="width: 100%;height: 100%" class="hidden-lg hidden-md hidden-sm">
+						</div>
+						<div class="col-md-2 col-md-offset-5 col-lg-2 col-lg-offset-5 col-sm-2 col-sm-offset-5 col-xs-3 col-xs-offset-6 ">
+							<input type="text" class=" hidden-xs col-md-9 col-lg-9 col-sm-9 int_1" placeholder="请输入关键词" autocomplete="on" onkeypress="return onKeyPress(event,'html/search.html')">
+
+							<span class=" hidden-xs col-md-3 col-lg-3 col-sm-3 lg_search int_2" onclick="TogglePages('html/search.html');">
+								<img src="img/shouye_pc/search.png">
+							</span>
+							<ul class="searchList" style="padding-left: 0;">
+								<li style="color: #bcbcbc;">历史搜索</li>
+								<li>产业研究</li>
+								<li>研究领域</li>
+							</ul>
+							<span class=" hidden-lg hidden-sm hidden-md col-xs-6 " style="{text-align: right;height: 34px;line-height: 34px;border-right: 1px solid #D7D7D7;}" onclick="sousuo()">
+								<img src="img/shouye_yd/sousuo.png" style="display:inline-block;width: 22px;height: 22px;">
+							</span>
+							<!--<span class=" hidden-lg hidden-sm hidden-md col-xs-1 "></span>-->
+							<span class=" hidden-lg hidden-sm hidden-md col-xs-6" style="text-align: left;height: 34px;line-height: 34px;">
+								<img src="img/shouye_yd/caidan.png" style="display:inline-block;width: 22px;height: 22px;" id="caidan_01" onclick="menu()")>
+								<img src="img/shouye_ios/guanbi.png" style="display:none;width: 22px;height: 22px;" id="caidan_02" onclick="menu1()">
+							</span>
+						</div>
+					</div>
+
+					<div id="top_02" style="margin-bottom: 30px;padding-top:15px ;text-align: right;padding-bottom: 10px;display: none;">
+						<div id="" style="border-radius: 8px;border: 1px solid #666666;width: 87%;text-align: left;padding-left:10px ;display: inline-block;margin-bottom: 15px;">
+							<input type="" name="" id="key_word_03" value="" placeholder="请输入关键词" style="width: 90%;height: 36px;border: 0;" onkeypress="return onKeyPress(event,'html/search.html')" />
+							<img src="img/shouye_ios/guanbi.png" style="width: 16px;height: 16px;" onclick="clearInput()">
+						</div>
+						<span id="" onclick="cancle()">
+							取消
+						</span>
+
+						<div id="" style="height: 10px;background: #f6f6f6;width: 110%;margin-left: -10px;">
+
+						</div>
+
+						<div id="">
+							<p id="" style="color: #bcbcbc;text-align: left;padding-left: 5%;line-height: 2;">
+								历史搜索
+							</p>
+							<p id="" style="text-align: left;padding-left: 5%;line-height: 2;">
+								nasv
+							</p>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</header>
+
+		<!--导航栏手机版  style="display: none;"-->
+		<div id="dise" class="hidden-lg hidden-sm hidden-md" style="padding-top: 5px;display: none;">
+			<div id="nav_main_div" class="hidden-lg hidden-sm hidden-md ">
+				<div id="" class="nav_01 " style="margin-top: 0;" onclick="TogglePages('html/homepage.html',true)">
+					<span id="" style="">
+						首页
+					</span>
+				</div>
+				<div id="" class="nav_01 ">
+					<span id="" class="col-xs-10" onclick="TogglePages('html/research-field.html',true)">
+					研究动态
+				    </span>
+					<img src="img/shouye_ios/xia.png" style="display:none " />
+					<img src="img/shouye_ios/shang.png" style="display:inline" />
+					<div id="" style="background: #f6f6f6;height: 5px;" class="menu_02">
+
+					</div>
+					<div id="" class="menu_01">
+						<div id="" onclick="TogglePages('html/industry-research.html',true,'产业研究')">
+							产业研究
+						</div>
+						<div id="" onclick="TogglePages('html/industry-research.html',true,'政策研究')">
+							政策研究
+						</div>
+						<div id="" onclick="TogglePages('html/industry-research.html',true,'人工智能安全')">
+							人工智能安全
+						</div>
+						<div id="" onclick="TogglePages('html/industry-research.html',true,'数据安全')">
+							数据安全
+						</div>
+						<div id="" onclick="TogglePages('html/industry-research.html',true,'物联网与工控安全')">
+							物联网与工控安全
+						</div>
+						<div id="" onclick="TogglePages('html/industry-research.html',true,'金融科技')">
+							金融科技
+						</div>
+					</div>
+				</div>
+				<div id="" class="nav_01">
+
+					<span id="" class="col-xs-10" onclick="TogglePages('html/saibo-viewpoint.html',true)">
+					赛博观点
+				    </span>
+					<img src="img/shouye_ios/xia.png" style="display:none" />
+					<img src="img/shouye_ios/shang.png" style="display:inline" />
+					<div id="" style="background: #f6f6f6;height: 5px;" class="menu_02">
+					</div>
+					<div id="" class="menu_01">
+						<div id="" onclick="TogglePages('html/saibo-viewpoint-Type.html',true,'企业资讯')">
+							企业资讯
+						</div>
+						<div id="" onclick="TogglePages('html/saibo-viewpoint-Type.html',true,'投资动态')">
+							投资动态
+						</div>
+						<div id="" onclick="TogglePages('html/saibo-viewpoint-Type.html',true,'学术文章')">
+							学术文章
+						</div>
+						<div id="" onclick="TogglePages('html/saibo-viewpoint-Type.html',true,'专家观点')">
+							专家交流
+						</div>
+
+					</div>
+				</div>
+				<div id="" class="nav_01">
+					<span id="" class="col-xs-10" onclick="TogglePages('html/research-report.html',true)">
+					研究报告
+				    </span>
+					<img src="img/shouye_ios/xia.png" style="display:none" />
+					<img src="img/shouye_ios/shang.png" style="display:inline" />
+					<div id="" style="background: #f6f6f6;height: 5px;" class="menu_02">
+					</div>
+					<div id="" class="menu_01">
+						<div id="" onclick="TogglePages('html/research-report-type.html',true,'国内报告')">
+							国内报告
+						</div>
+						<div id="" onclick="TogglePages('html/research-report-type.html',true,'国内报告')">
+							国外报告
+						</div>
+						<div id="" onclick="TogglePages('html/research-report-type.html',true,'国内报告')">
+							赛博原创
+						</div>
+
+					</div>
+				</div>
+				<div id="" class="nav_01">
+					<span id="" class="col-xs-10" onclick="TogglePages('html/news-information.html',true)">
+					新闻动态
+				    </span>
+					<img src="img/shouye_ios/xia.png" style="display:none" />
+					<img src="img/shouye_ios/shang.png" style="display: inline" />
+					<div id="" style="background: #f6f6f6;height: 5px;" class="menu_02">
+					</div>
+					<div id="" class="menu_01">
+						<div id="" onclick="TogglePages('html/news-information-type.html',true,'赛博动态')">
+							赛博动态
+						</div>
+						<div id="" onclick="TogglePages('html/news-information-type.html',true,'新闻报道')">
+							新闻报道
+						</div>
+						<div id="" onclick="TogglePages('html/news-information-type.html',true,'主要会议')">
+							主要会议
+						</div>
+
+					</div>
+				</div>
+				<div id="" class="nav_01">
+					<span id="" class="col-xs-10" onclick="TogglePages('html/about-us.html',true)">
+					关于我们
+				    </span>
+					<img src="img/shouye_ios/xia.png" style="display:none" />
+					<img src="img/shouye_ios/shang.png" style="display:inline" />
+					<div id="" style="background: #f6f6f6;height: 5px;" class="menu_02">
+					</div>
+					<div id="" class="menu_01">
+						<div id="" onclick="TogglePages('html/about-us.html',true)">
+							研究院介绍
+						</div>
+						<div id="" onclick="TogglePages('html/about-us.html',true)">
+							宗旨愿景
+						</div>
+						<div id="" onclick="TogglePages('html/about-us.html',true)">
+							研究团队
+						</div>
+						<div id="" onclick="TogglePages('html/about-us.html',true)">
+							高级顾问
+						</div>
+						<div id="" onclick="TogglePages('html/about-us.html',true)">
+							合作伙伴
+						</div>
+						<div id="" onclick="TogglePages('html/about-us.html',true)">
+							联系我们
+						</div>
+						<div id="" onclick="TogglePages('html/about-us.html',true)">
+							研究案例
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<!--导航栏-->
+		<nav class="navbar wjs_nav hidden-xs" data-offset-top="40">
+			<!--data-spy="affix"指导航栏点击那个，锚点到哪-->
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">                    <!-- data-toggle指的是是以什么事件，data-target是改变的dom-->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+					<a class="navbar-brand" href="#">
+						<span class="wjs_icon wjs_icon_logo"></span>
+						<span class="wjs_icon wjs_icon_name"></span>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav sb_ul" style="width: 100%;text-align: center">
+						<li class="active">
+							<a href="javascript:void(0);" onclick="TogglePages('html/homepage.html')">首页</a>
+						</li>
+						<li class="suspension-menu">
+							<a href="javascript:void(0);" onclick="TogglePages('html/research-field.html')">研究动态</a>
+							<ul id="sub_01">
+								<li onclick="TogglePages('html/industry-research.html',false,'产业研究')">
+									<a href="javascript:void(0);" target="_blank">产业研究</a>
+								</li>
+								<li onclick="TogglePages('html/industry-research.html',false,'政策研究')">
+									<a href="javascript:void(0);" target="_blank">政策研究</a>
+								</li>
+								<li onclick="TogglePages('html/industry-research.html',false,'人工智能安全')">
+									<a href="javascript:void(0);" target="_blank">人工智能安全</a>
+								</li>
+								<li onclick="TogglePages('html/industry-research.html',false,'数据安全')">
+									<a href="javascript:void(0);" target="_blank">数据安全</a>
+								</li>
+								<li onclick="TogglePages('html/industry-research.html',false,'物联网与工控安全')">
+									<a href="javascript:void(0);" target="_blank">物联网与工控安全</a>
+								</li>
+								<li onclick="TogglePages('html/industry-research.html',false,'金融科技')">
+									<a href="javascript:void(0);" target="_blank">金融科技</a>
+								</li>
+							</ul>
+						</li>
+						<li class="suspension-menu">
+							<a href="javascript:void(0);" onclick="TogglePages('html/saibo-viewpoint.html')">赛博观点</a>
+							<ul id="sub_02">
+								<li onclick="TogglePages('html/saibo-viewpoint-Type.html',false,'企业资讯')">
+									<a href="javascript:void(0);" target="_blank">企业资讯</a>
+								</li>
+								<li onclick="TogglePages('html/saibo-viewpoint-Type.html',false,'投资动态')">
+									<a href="javascript:void(0);" target="_blank">投资动态</a>
+								</li>
+								<li onclick="TogglePages('html/saibo-viewpoint-Type.html',false,'学术文章')">
+									<a href="javascript:void(0);" target="_blank">学术文章</a>
+								</li>
+								<li onclick="TogglePages('html/saibo-viewpoint-Type.html',false,'专家观点')">
+									<a href="javascript:void(0);" target="_blank">专家观点</a>
+								</li>
+							</ul>
+						</li>
+						<li class="suspension-menu">
+							<a href="javascript:void(0);" onclick="TogglePages('html/research-report.html')">研究报告</a>
+							<ul id="sub_03">
+								<li onclick="TogglePages('html/research-report-type.html',false,'国内报告')">
+									<a href="javascript:void(0);" target="_blank">国内报告</a>
+								</li>
+								<li onclick="TogglePages('html/research-report-type.html',false,'国外报告')">
+									<a href="javascript:void(0);" target="_blank">国外报告</a>
+								</li>
+								<li onclick="TogglePages('html/research-report-type.html',false,'赛博原创')">
+									<a href="javascript:void(0);" target="_blank">赛博原创</a>
+								</li>
+							</ul>
+						</li>
+						<li class="suspension-menu">
+							<a href="javascript:void(0);" onclick="TogglePages('html/news-information.html')">新闻动态</a>
+							<ul id="sub_04">
+								<li onclick="TogglePages('html/news-information-type.html',false,'赛博动态')">
+									<a href="javascript:void(0);" target="_blank">赛博动态</a>
+								</li>
+								<li onclick="TogglePages('html/news-information-type.html',false,'新闻报道')">
+									<a href="javascript:void(0);" target="_blank">新闻报道</a>
+								</li>
+								<li onclick="TogglePages('html/news-information-type.html',false,'主要会议')">
+									<a href="javascript:void(0);" target="_blank">主要会议</a>
+								</li>
+							</ul>
+						</li>
+						<li class="suspension-menu">
+							<a href="javascript:void(0);" onclick="TogglePages('html/about-us.html')">关于我们</a>
+							<ul id="sub_05">
+								<li onclick="TogglePages('html/about-us.html')">
+									<a href="javascript:void(0);" target="_blank">研究院介绍</a>
+								</li>
+								<li onclick="TogglePages('html/about-us.html')">
+									<a href="javascript:void(0);" target="_blank">宗旨愿景</a>
+								</li>
+								<li onclick="TogglePages('html/research-team.html')">
+									<a href="javascript:void(0);" target="_blank">研究团队</a>
+								</li>
+								<li onclick="TogglePages('html/research-team.html')">
+									<a href="javascript:void(0);" target="_blank">高级顾问</a>
+								</li>
+								<li onclick="TogglePages('html/about-us.html')">
+									<a href="javascript:void(0);" target="_blank">合作伙伴</a>
+								</li>
+								<li onclick="TogglePages('html/about-us.html')">
+									<a href="javascript:void(0);" target="_blank">联系我们</a>
+								</li>
+								<li onclick="TogglePages('html/about-us.html')">
+									<a href="javascript:void(0);" target="_blank">研究案例</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<!--<ul class="nav navbar-nav navbar-right hidden-sm">-->
+					<!--<li><a href="#">个人中心</a></li>-->
+					<!--</ul>-->
+				</div>
+			</div>
+		</nav>
+
+		<!--中间内容-->
+		<div id="content">
+
+		</div>
+		<!--底部-->
+		<footer style="background: #848389;" id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3  col-md-3 col-sm-3  col-xs-6" style="margin-top: 10px">
+						<img src="img/shouye_pc/logo_dibu.png" style="width: 85%;height: 81px;">
+						<div style="margin-top: 6px;" class="hidden-xs brand">
+							<span>版权所有</span><br/>
+							<!--<span>上海赛博网络安全产业创新研究院</span><br/>-->
+							<span>赛博研究院</span><br/>
+							<span>沪ICP备12345678号</span>
+						</div>
+					</div>
+					<div class="col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 jianj" style="padding-right: 49px;">
+						<p>地址 : 上海长宁区愚园路1258号绿城商务大厦15A楼01室</p>
+						<p>电话 : 021-61432693 &npsb;&npsb;021-61432696</p>
+						<p>邮箱 : public@sicsi.org.cn</p>
+						<p>宗旨 : 构筑网安创新品台,汇聚专业研究力量,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;推进产业投用协同,助力网络强国建设.</p>
+						<p>简介 : 赛博研究院是上海市经信委指导下的民办非企业单位</p>
+					</div>
+					<div class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-7 eweim" style="background: #BEBEBE;height: 151px;padding: 16px;min-width: 234px;">
+						<img src="img/shouye_pc/erweima.png" style="width: 43%;height: 99%;margin: auto;">
+						<div style="display: inline-block;vertical-align: middle;color: #FCFCFC;margin-left: 5px;font-size: 13px;line-height: 27px;" class="khao">
+							<span>构筑网安创新品台</span><br/>
+							<span>汇聚专业研究力量</span><br/>
+							<span>推进产业投用协同</span><br/>
+							<span>助力网络强国建设</span>
+						</div>
+					</div>
+					<div style="margin-top: 6px;color: white" class="hidden-lg hidden-md hidden-sm col-xs-8">
+						<span>版权所有</span>
+						<span>赛博研究院</span><br/>
+						<span style="margin-left: 63px;">沪ICP备12345678号</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/common/main.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */* {
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+	font-family: 'Glyphicons Halflings';
+	src: url('../fonts/glyphicons-halflings-regular.eot');
+	src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+.glyphicon {
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	font-family: 'Glyphicons Halflings';
+	-webkit-font-smoothing: antialiased;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-moz-osx-font-smoothing: grayscale;
+}
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333;
+	background-color: #fff;
+}
+.navStart{
+	padding-left: 0;
+}
+a {
+	color: #666;
+}
+a:hover {
+	text-decoration: none;
+	color: red;
+}
+ul, ol li {
+	list-style: none;
+}
+.see {
+	background: #50B1E3;
+	border-radius: 5px;
+}
+.see a {
+	color: #fff;
+}
+tr th, td {
+	text-align: center;
+}
+.reader .col-md-3 {
+	text-align: center;
+}
+.driver {
+	text-align: center;
+	background: #50B1E3;
+	padding: 20px 0;
+	margin-top: 0;
+	color: #fff;
+}
+.driver img, span {
+	vertical-align: middle;
+}
+.line .col-md-4 {
+	text-align: center;
+}
+.footer {
+	color: #fff;
+	padding-top: 30px;
+	background: #525252;
+	width: 100%;
+	padding-bottom: 20px;
+}
+.footer a {
+	color: #fff;
+}
+.pic {
+	background: #F5841C;
+	padding: 10px;
+	border-radius: 5px;
+	font-weight: bold;
+	color: #fff;
+}
+.neirong p {
+	text-indent: 2em;
+}
+.neirong ul li{ margin:5px 0;}
+.agreement p {
+	text-indent: 2em;
+}
+.navbar-collapse {
+	padding-left: 0;
+	padding-right: 0;
+}
+.navbar-nav > li > a {
+	padding: 15px 30px;
+}
+.neirong dl dt{ margin:10px 0;}
+.neirong dl dd{ margin:5px 0; line-height:25px;}
+.liuyan { margin:10px auto; border:1px solid #ccc;}
+.liuyan div{ margin:10px auto;}
+.yincang a:hover {
+    cursor: pointer;
+}
+
+.logo{
+	width: 249px;
+	margin-top: 13px;
+	margin-bottom: 13px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.search{
+	display: inline-block;
+	width: 100px;
+	height: 21px;
+	font-size: 10px;
+	padding-left: 5px;
+	float: right;
+	margin-top: 10px;
+	vertical-align: middle;
+}
+.search>input{
+	width: 74%;
+	height: 100%;
+	display: inline-block;
+}
+.search>span{
+	width: 25%;
+	height: 99%;
+	vertical-align: top;
+	text-align: center;
+	line-height: 20px;
+	display: inline-block;
+	border-radius: 0 10px 10px 0;
+	background: #1572bc;
+}
+.search>span>img{
+	width: 62%;
+	height: 67%;
+}
+.nav.navbar-nav{
+	background: #016FCB;
+
+}
+.navbar-default .navbar-nav>li>a {
+	/* color: #777; */
+	color: white;
+}
+.navbar-default {
+	 background-color: white;
+	 border-color: white;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	color: white;
+	background-color: dodgerblue;
+}
+
+
+
+
+
+
+
+
+
+

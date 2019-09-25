@@ -1,0 +1,178 @@
+@font-face { font-family: 'iconfont'; src: url('../dist/fontalbb/iconfont.eot'); src: url('../dist/fontalbb/iconfont.eot?#iefix') format('embedded-opentype'), url('../dist/fontalbb/iconfont.woff') format('woff'), url('../dist/fontalbb/iconfont.ttf') format('truetype'), url('../dist/fontalbb/iconfont.svg#iconfont') format('svg'); }
+
+.iconfont{ font-family:"iconfont" !important; font-size:16px;font-style:normal; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: 0.2px; -moz-osx-font-smoothing: grayscale; }
+@media screen and (max-width: 414px) and (min-width: 0px) {
+    body{
+        background: #F2F2F2;
+    }
+     .bainian .row,.neirong .row,.sj .row,.js .row{
+         padding-right: 3%!important;
+         padding-left: 3%!important;
+     }
+    .bn{
+        height: 200px!important;
+    }
+    /*.bn>div,.bn>div>div{*/
+        /*height: 200px!important;*/
+    /*}*/
+    .bainian{
+        margin-top: 23px;
+    }
+    .js>div>div>div>div{
+        width: 47%!important;
+    }
+    .yd-dibu{
+        background: url("../img/dibu .jpg");
+        height: 75px;
+    }
+    .yd-dibu>p:first-of-type{
+        margin-top: 23px!important;
+    }
+    .bnZ>img{
+        height: 200px!important;
+    }
+    .zuimei.swiper-container {
+        height: 218px!important;
+
+    }
+    .jj p,.jj h5 {
+        margin: 4px!important;
+        overflow : hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;      /* 可以显示的行数，超出部分用...表示*/
+        -webkit-box-orient: vertical;
+    }
+    /*.yue{*/
+        /*min-width: 90px!important;*/
+    /*}*/
+     .bj>span{
+         position: absolute;
+        right: 0px!important;
+        top: 8px;
+        width: 113px!important;
+        height: 30px;
+        border-radius: 30px;
+        border: 1px solid #f2f2f2;
+        overflow: hidden;
+        background-color: #ffffff;
+    }
+    .bj>span>input{
+            width: 60%!important;
+            outline: none;
+            border: none;
+            background: rgba(255,255,255,0.31);
+            padding-left: 10px;
+            box-sizing: border-box;
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 375px) {
+    .bnY{
+        padding: 0!important;
+    }
+    .bnY>div>div:nth-of-type(2){
+        padding-left: 12%!important;
+    }
+    .bnY>div .xb, .bnY>div>div>span{
+        font-size: 10px;
+    }
+    .sj>div>div>div:nth-of-type(2)>p{
+        font-size: 12px;
+        overflow : hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;      /* 可以显示的行数，超出部分用...表示*/
+        -webkit-box-orient: vertical;
+    }
+     .bj>span{
+         position: absolute;
+        right: 0px!important;
+        top: 8px;
+        width: 113px!important;
+        height: 30px;
+        border-radius: 30px;
+        border: 1px solid #f2f2f2;
+        overflow: hidden;
+        background-color: #ffffff;
+    }
+    .bj>span>input{
+            width: 60%!important;
+            outline: none;
+            border: none;
+            background: rgba(255,255,255,0.31);
+            padding-left: 10px;
+            box-sizing: border-box;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .bnY{
+        padding: 0!important;
+    }
+    .bnY>div>div:nth-of-type(2){
+        padding-left: 3%!important;
+    }
+    .bnY>div .xb, .bnY>div>div>span{
+        font-size: 10px;
+    }
+    
+    .bj>span{
+         position: absolute;
+        right: 0px!important;
+        top: 8px;
+        width: 113px!important;
+        height: 30px;
+        border-radius: 30px;
+        border: 1px solid #f2f2f2;
+        overflow: hidden;
+        background-color: #ffffff;
+    }
+    .bj>span>input{
+            width: 60%!important;
+            outline: none;
+            border: none;
+            background: rgba(255,255,255,0.31);
+            padding-left: 10px;
+            box-sizing: border-box;
+    }
+       
+    
+}
+@media only screen and (min-width: 992px) and (max-width: 993px) {
+    .bnY>div {
+        line-height: 93px!important;
+        margin-top: -14px!important;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .bnY{
+        padding-left: 0!important;
+    }
+    .bnY>div {
+        line-height: 49px!important;
+        margin-top: -14px!important;
+    }
+    .xb {
+        font-size: 10px!important;
+        line-height: 104px;
+    }
+    .bnY>div>div>span{
+        font-size: 10px!important;
+        line-height: 104px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 786px) {
+    .sj>div>div>div>div{
+        font-size: 68px;
+    }
+}
+.jj{
+    text-align: center;
+}
+.jj h5{
+   font-size: 16px;
+    font-weight: 800;
+}
+
+.jj h5,p{
+    margin: 0;
+}

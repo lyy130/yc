@@ -1,0 +1,30 @@
+@font-face {font-family: "汉仪旗黑50S";
+    src: url('HYQiHei-50S.eot?t=1561434105502'); /* IE9 */
+    src: url('HYQiHei-50S.eot?t=1561434105502#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('HYQiHei-50S.woff?t=1561434105502') format('woff'),
+    url('HYQiHei-50S.ttf?t=1561434105502') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('HYQiHei-50S.svg?t=1561434105502#iconfont') format('svg'); /* iOS 4.1- */
+}
+@font-face {font-family: "汉仪旗黑70S";
+    src: url('HYQiHei-70S.eot?t=1561434105502'); /* IE9 */
+    src: url('HYQiHei-70S.eot?t=1561434105502#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('HYQiHei-70S.woff?t=1561434105502') format('woff'),
+    url('HYQiHei-70S.ttf?t=1561434105502') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('HYQiHei-70S.svg?t=1561434105502#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {font-family: "汉仪旗黑75S";
+    src: url('HYQiHei-75S.eot?t=1561434105502'); /* IE9 */
+    src: url('HYQiHei-75S.eot?t=1561434105502#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('HYQiHei-75S.woff?t=1561434105502') format('woff'),
+    url('HYQiHei-75S.ttf?t=1561434105502') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('HYQiHei-75S.svg?t=1561434105502#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {font-family: "汉仪旗黑80S";
+    src: url('HYQiHei-80S.eot?t=1561434105502'); /* IE9 */
+    src: url('HYQiHei-80S.eot?t=1561434105502#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('HYQiHei-80S.woff?t=1561434105502') format('woff'),
+    url('HYQiHei-80S.ttf?t=1561434105502') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('HYQiHei-80S.svg?t=1561434105502#iconfont') format('svg'); /* iOS 4.1- */
+}

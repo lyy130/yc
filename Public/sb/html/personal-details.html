@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+		<title>研究团队个人详情</title>
+		<link href="css/industry-research.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/common/service.js"></script>
+	</head>
+	<style>
+		.name_01 {
+			font-size: 16px;
+			font-weight: bold;
+			color: #1e69a2;
+			margin-top: 20px;
+			line-height: 60px;
+			border-bottom: 1px solid #1e69a2;
+		}
+		
+		.name_02 {
+			margin-top: 20px;
+		}
+	</style>
+
+	<body>
+		<div class="info" id="vm">
+			<div class="container container1" style="padding-left: 8px;padding-right: 10px;">
+				<div class="row">
+					<div class="info_left col-lg-8 col-md-8 col-sm-8 col-xs-12 do1">
+						<div id="" class="navigation_01">
+							当前位置：
+							<span id="" class="title_07" onclick="aboutUs()">
+                                            关于我们                          
+                     </span> &nbsp;>&nbsp;
+							<span id="" class="title_07" onclick="research()">
+                              研究团队
+              </span> &nbsp;>&nbsp;
+							<span class="navigation_02">
+                             {{pageName}}
+              </span>
+						</div>
+						<div>
+							<div class="name_01">
+								{{pageName}}
+							</div>
+							<div class="content_03" style="margin-top: 0;">
+
+								<ul class="study_dong">
+									<li style="border: 0;">
+										<img v-bind:src="imgsrc" class="col-lg-5 col-md-5 col-sm-5 col-xs-4" style="height: 200px;" />
+										<div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 new_wen new_wen_01">
+											<p class="name_02">年龄：24</p>
+											<p class="name_02">职务：研究院</p>
+											<p class="name_02">学历：硕士</p>
+											<p class="name_02">联系方式：123456789</p>
+										</div>
+
+									</li>
+								</ul>
+							</div>
+
+							<p style="letter-spacing: 1px;color: #666666;font-size: 14px;">
+								&nbsp;&nbsp;&nbsp;&nbsp;上海社科院互联网研究中心执行主任，上海赛博网络安全产业创新研究院首席研究员上海社科院互联网研究中心执行主任，上海赛博网络安全产业创新研究院首席研究员上海社科院互联网研究中心执行主任，上海赛博网络安全产业创新研究院首席研究员
+							</p>
+
+							<div style="margin-top: 20px;"><span style="font-weight: bolder;">研究领域：</span><span class="author_color">产业研究；人工智能安全</span></div>
+							<p style="margin-top: 20px;font-weight: bolder;">研究成果：</p>
+						</div>
+
+						<!--轮播图下面第一个 #337ab7-->
+						<div class="study_dong">
+							<!--<span class="study_title">研究动态</span>-->
+							<!--<hr style="margin: 5px;">-->
+							<ul class="study_dong">
+								<li onclick="gotrends('赛博观点','html/saibo-viewpoint.html')">
+									<img src="img/shouye_pc/picture3.png" class="col-lg-5 col-md-5 col-sm-5 col-xs-4" />
+									<div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 new_wen new_wen_01">
+										<span class="bold">
+                      <span class="hot">HOT</span>
+										<span id="" class="title_05" style="font-size: 20px;">
+                        网络安全与信息安全
+                      </span>
+										</span>
+										<br />
+										<span class="content_01">2015-01-05 作者：</span>
+										<span class="author_color content_01">李四</span><br />
+										<span style="font-size: 14px;" class="content_01">关键词:<span class="author_color">NSA 新思路</span></span>
+										<p class="content_01">新闻新闻新闻新闻新闻新闻新闻新闻新闻闻新闻新闻新闻新闻新闻新</p>
+										<span class="yan content_01"><img src="img/shouye_yd/liulan.png" alt="" />12</span>
+									</div>
+
+									<div class="clear"></div>
+								</li>
+								<li onclick="gotrends('赛博观点','html/saibo-viewpoint.html')">
+									<img src="img/shouye_pc/picture3.png" class="col-lg-5 col-md-5 col-sm-5 col-xs-4" />
+									<div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 new_wen new_wen_01">
+										<span class="bold">
+                      <span id="" class="title_05" style="font-size: 20px;">
+                        网络安全与信息安全
+                      </span></span><br />
+										<span class="content_01">2015-01-05 作者：</span>
+										<span class="author_color content_01">李四</span><br />
+										<span style="font-size: 14px;" class="content_01">关键词:<span class="author_color">NSA 新思路</span></span>
+										<p class="content_01">新闻新闻新闻新闻新闻新闻新闻新闻新闻闻新闻新闻新闻新闻新闻新</p>
+										<span class="yan content_01"><img src="img/shouye_yd/liulan.png" alt="" />12</span>
+									</div>
+									<div class="clear"></div>
+								</li>
+								<li onclick="gotrends('赛博观点','html/saibo-viewpoint.html')">
+									<img src="img/shouye_pc/picture3.png" class="col-lg-5 col-md-5 col-sm-5 col-xs-4" />
+									<div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 new_wen new_wen_01">
+										<span class="bold">
+                      <span id="" class="title_05" style="font-size: 20px;">
+                        网络安全与信息安全
+                      </span></span><br />
+										<span class="content_01">2015-01-05 作者：</span>
+										<span class="author_color content_01">李四</span><br />
+										<span style="font-size: 14px;" class="content_01">关键词:<span class="author_color">NSA 新思路</span></span>
+										<p class="content_01">新闻新闻新闻新闻新闻新闻新闻新闻新闻闻新闻新闻新闻新闻新闻新</p>
+										<span class="yan content_01"><img src="img/shouye_yd/liulan.png" alt="" />12</span>
+									</div>
+									<div class="clear"></div>
+								</li>
+								<li onclick="gotrends('赛博观点','html/saibo-viewpoint.html')">
+									<img src="img/shouye_pc/picture3.png" class="col-lg-5 col-md-5 col-sm-5 col-xs-4" />
+									<div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 new_wen new_wen_01">
+										<span class="bold">
+                      <span id="" class="title_05" style="font-size: 20px;">
+                        网络安全与信息安全
+                      </span></span><br />
+										<span class="content_01">2015-01-05 作者：</span>
+										<span class="author_color content_01">李四</span><br />
+										<span style="font-size: 14px;" class="content_01">关键词:<span class="author_color">NSA 新思路</span></span>
+										<p class="content_01">新闻新闻新闻新闻新闻新闻新闻新闻新闻闻新闻新闻新闻新闻新闻新</p>
+										<span class="yan content_01"><img src="img/shouye_yd/liulan.png" alt="" />12</span>
+									</div>
+
+									<div class="clear"></div>
+								</li>
+								<li onclick="gotrends('赛博观点','html/saibo-viewpoint.html')">
+									<img src="img/shouye_pc/picture3.png" class="col-lg-5 col-md-5 col-sm-5 col-xs-4" />
+									<div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 new_wen new_wen_01">
+										<span class="bold">
+                      <span id="" class="title_05" style="font-size: 20px;">
+                        网络安全与信息安全
+                      </span></span><br />
+										<span class="content_01">2015-01-05 作者：</span>
+										<span class="author_color content_01">李四</span><br />
+										<span style="font-size: 14px;" class="content_01">关键词:<span class="author_color">NSA 新思路</span></span>
+										<p class="content_01">新闻新闻新闻新闻新闻新闻新闻新闻新闻闻新闻新闻新闻新闻新闻新</p>
+										<span class="yan content_01"><img src="img/shouye_yd/liulan.png" alt="" />12</span>
+									</div>
+
+									<div class="clear"></div>
+								</li>
+								<li onclick="gotrends('赛博观点','html/saibo-viewpoint.html')">
+									<img src="img/shouye_pc/picture3.png" class="col-lg-5 col-md-5 col-sm-5 col-xs-4" />
+									<div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 new_wen new_wen_01">
+										<span class="bold">
+                      <span id="" class="title_05" style="font-size: 20px;">
+                        网络安全与信息安全
+                      </span></span><br />
+										<span class="content_01">2015-01-05 作者：</span>
+										<span class="author_color content_01">李四</span><br />
+										<span style="font-size: 14px;" class="content_01">关键词:<span class="author_color">NSA 新思路</span></span>
+										<p class="content_01">新闻新闻新闻新闻新闻新闻新闻新闻新闻闻新闻新闻新闻新闻新闻新</p>
+										<span class="yan content_01"><img src="img/shouye_yd/liulan.png" alt="" />12</span>
+									</div>
+
+									<div class="clear"></div>
+								</li>
+							</ul>
+						</div>
+
+						<div style="text-align: center;">
+							<nav aria-label="Page navigation">
+								<ul class="pagination">
+									<li>
+										<a href="javascript:void(0);" aria-label="Previous">
+											<span aria-hidden="true">&laquo;</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">1</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">2</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">3</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">4</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">5</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" aria-label="Next">
+											<span aria-hidden="true">&raquo;</span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+
+					<!--右边-->
+					<div class="info_right col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="new_dong">
+							<span style="color: #1E69A2;font-weight: bold;font-size: 20px;">最新动态</span>
+							<hr style="margin: 9px 0;" />
+							<ul class="new_dong zuixin">
+								<li onclick="">
+									<img src="img/shouye_pc/picture3.png" class="col-lg-5 col-md-5 col-sm-5 col-xs-4" />
+									<div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 new_wen new_right new_wen_02">
+										<span class="bold title_06">网络安全与信息安全</span>
+										<span class="content_01">2015-01-05 作者：</span>
+										<span class="author_color content_01">李四</span>
+										<p class="content_01 content_02">新闻新闻新闻新闻新闻新闻新闻新闻新闻闻新闻新闻新闻新闻新闻新</p>
+										<span class="yan content_01"><img src="img/shouye_yd/liulan.png" alt="" />12</span>
+									</div>
+
+									<div class="clear"></div>
+								</li>
+								<li>
+									<img src="img/shouye_pc/picture3.png" class="col-lg-5 col-md-5 col-sm-5 col-xs-4" />
+									<div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 new_wen new_right new_wen_02">
+										<span class="bold title_06">网络安全与信息安全</span>
+										<span class="content_01">2015-01-05 作者：</span>
+										<span class="author_color content_01">李四</span>
+										<p class="content_01 content_02">新闻新闻新闻新闻新闻新闻新闻新闻新闻闻新闻新闻新闻新闻新闻新</p>
+										<span class="yan content_01"><img src="img/shouye_yd/liulan.png" alt="" />12</span>
+									</div>
+
+									<div class="clear"></div>
+								</li>
+								<li>
+									<img src="img/shouye_pc/picture3.png" class="col-lg-5 col-md-5 col-sm-5 col-xs-4" />
+									<div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 new_wen new_right new_wen_02">
+										<span class="bold title_06">网络安全与信息安全</span>
+										<span class="content_01">2015-01-05 作者：</span>
+										<span class="author_color content_01">李四</span>
+										<p class="content_01 content_02">新闻新闻新闻新闻新闻新闻新闻新闻新闻闻新闻新闻新闻新闻新闻新</p>
+										<span class="yan content_01"><img src="img/shouye_yd/liulan.png" alt="" />12</span>
+									</div>
+
+									<div class="clear"></div>
+								</li>
+								<li>
+									<img src="img/shouye_pc/picture3.png" class="col-lg-5 col-md-5 col-sm-5 col-xs-4" />
+									<div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 new_wen new_right new_wen_02">
+										<span class="bold title_06">网络安全与信息安全</span>
+										<span class="content_01">2015-01-05 作者：</span>
+										<span class="author_color content_01">李四</span>
+										<p class="content_01 content_02">新闻新闻新闻新闻新闻新闻新闻新闻新闻闻新闻新闻新闻新闻新闻新</p>
+										<span class="yan content_01"><img src="img/shouye_yd/liulan.png" alt="" />12</span>
+									</div>
+
+									<div class="clear"></div>
+								</li>
+								<li>
+									<img src="img/shouye_pc/picture3.png" class="col-lg-5 col-md-5 col-sm-5 col-xs-4" />
+									<div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 new_wen new_right new_wen_02">
+										<span class="bold title_06">网络安全与信息安全</span>
+										<span class="content_01">2015-01-05 作者：</span>
+										<span class="author_color content_01">李四</span>
+										<p class="content_01 content_02">新闻新闻新闻新闻新闻新闻新闻新闻新闻闻新闻新闻新闻新闻新闻新</p>
+										<span class="yan content_01"><img src="img/shouye_yd/liulan.png" alt="" />12</span>
+									</div>
+
+									<div class="clear"></div>
+								</li>
+							</ul>
+							<div class="more">
+								<a href="javascript:;">更多动态></a>
+							</div>
+						</div>
+
+						<!--右边第二个-->
+						<div class="net_hot">
+							<span style="color: #1E69A2;font-weight: bold;font-size: 20px;">网络热词</span>
+							<hr style="margin: 9px 0;" />
+							<!--<img src="img/shouye_pc/picture3.png" style="width: 100%" />-->
+							<div id="networkHotWords" class="networkHotWords" style="width: 100%;height:200px"></div>
+						</div>
+
+						<!--右边第三个-->
+						<div class="new_dong ">
+							<span style="color: #1E69A2;font-weight: bold;font-size: 20px;">研究团队</span>
+							<hr style="margin: 9px 0;" />
+							<ul class="new_dong tuandui">
+								<li>
+									<img src="img/shouye_pc/picture3.png" class="col-lg-5 col-md-5 col-sm-5 col-xs-4" />
+									<div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 new_wen new_right new_wen_02">
+										<span class="bold title_06">网络安全与信息安全</span>
+										<span class="content_01">2015-01-05 作者：</span>
+										<span class="author_color content_01">李四</span>
+										<p class="content_01 content_02">新闻新闻新闻新闻新闻新闻新闻新闻新闻闻新闻新闻新闻新闻新闻新</p>
+										<span class="yan content_01"><img src="img/shouye_yd/liulan.png" alt="" />12</span>
+									</div>
+
+									<div class="clear"></div>
+								</li>
+								<li>
+									<img src="img/shouye_pc/picture3.png" class="col-lg-5 col-md-5 col-sm-5 col-xs-4" />
+									<div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 new_wen new_right new_wen_02">
+										<span class="bold title_06">网络安全与信息安全</span>
+										<span class="content_01">2015-01-05 作者：</span>
+										<span class="author_color content_01">李四</span>
+										<p class="content_01 content_02">新闻新闻新闻新闻新闻新闻新闻新闻新闻闻新闻新闻新闻新闻新闻新</p>
+										<span class="yan content_01"><img src="img/shouye_yd/liulan.png" alt="" />12</span>
+									</div>
+
+									<div class="clear"></div>
+								</li>
+								<li>
+									<img src="img/shouye_pc/picture3.png" class="col-lg-5 col-md-5 col-sm-5 col-xs-4" />
+									<div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 new_wen new_right new_wen_02">
+										<span class="bold title_06">网络安全与信息安全</span>
+										<span class="content_01">2015-01-05 作者：</span>
+										<span class="author_color content_01">李四</span>
+										<p class="content_01 content_02">新闻新闻新闻新闻新闻新闻新闻新闻新闻闻新闻新闻新闻新闻新闻新</p>
+										<span class="yan content_01"><img src="img/shouye_yd/liulan.png" alt="" />12</span>
+									</div>
+
+									<div class="clear"></div>
+								</li>
+								<li>
+									<img src="img/shouye_pc/picture3.png" class="col-lg-5 col-md-5 col-sm-5 col-xs-4" />
+									<div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 new_wen new_right new_wen_02">
+										<span class="bold title_06">网络安全与信息安全</span>
+										<span class="content_01">2015-01-05 作者：</span>
+										<span class="author_color content_01">李四</span>
+										<p class="content_01 content_02">新闻新闻新闻新闻新闻新闻新闻新闻新闻闻新闻新闻新闻新闻新闻新</p>
+										<span class="yan content_01"><img src="img/shouye_yd/liulan.png" alt="" />12</span>
+									</div>
+
+									<div class="clear"></div>
+								</li>
+								<li>
+									<img src="img/shouye_pc/picture3.png" class="col-lg-5 col-md-5 col-sm-5 col-xs-4" />
+									<div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 new_wen new_right new_wen_02">
+										<span class="bold title_06">网络安全与信息安全</span>
+										<span class="content_01">2015-01-05 作者：</span>
+										<span class="author_color content_01">李四</span>
+										<p class="content_01 content_02">新闻新闻新闻新闻新闻新闻新闻新闻新闻闻新闻新闻新闻新闻新闻新</p>
+										<span class="yan content_01"><img src="img/shouye_yd/liulan.png" alt="" />12</span>
+									</div>
+
+									<div class="clear"></div>
+								</li>
+							</ul>
+							<div class="more">
+								<a href="javascript:;">更多研究团队></a>
+							</div>
+						</div>
+
+						<!--<div class="clear"></div>-->
+						<!--右边第四个-->
+						<div class="new_hui ">
+							<span style="color: #1E69A2;font-weight: bold;font-size: 20px;">最新会议</span>
+							<hr style="margin: 9px 0;" />
+							<div class="clear"></div>
+							<ul class="new_hui huiyi">
+								<li class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
+									<img src="img/shouye_pc/picture3.png" class="" />
+									<div class="new_xin">
+										<span class="bold">人工智能大会</span><br />
+										<span>2015-01-05 13:30</span>&nbsp;&nbsp; <span class="meet_color">上海展览中心</span>&nbsp;&nbsp;
+										<span>五号厅</span><br />
+										<span>主办单位:</span><span class="meet_color">赛博研究院</span><br />
+										<span>协办单位:</span><span class="meet_color">上海经信委</span><br />
+										<p>会议主题:新闻新闻新闻新闻新闻新闻新闻新闻新闻闻新闻新闻新闻新闻新闻新</p>
+										<a href="javascript:;" style="float: left;" class="meeting-report">我要参会></a>
+										<span class="yan"><img src="img/shouye_yd/liulan.png" alt="" />12</span>
+									</div>
+
+									<!--<div class="clear"></div>-->
+								</li>
+								<!--<div class="clear"></div>-->
+								<li class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
+									<img src="img/shouye_pc/picture3.png" />
+									<div class="new_xin">
+										<span class="bold">人工智能大会</span><br />
+										<span>2015-01-05 13:30</span>&nbsp;&nbsp; <span class="meet_color">上海展览中心</span>&nbsp;&nbsp;
+										<span>五号厅</span><br />
+										<span>主办单位:</span><span class="meet_color">赛博研究院</span><br />
+										<span>协办单位:</span><span class="meet_color">上海经信委</span><br />
+										<p>会议主题:新闻新闻新闻新闻新闻新闻新闻新闻新闻闻新闻新闻新闻新闻新闻新</p>
+										<a href="javascript:;" style="float: left;" class="meeting-report">会议报告></a>
+										<span class="yan"><img src="img/shouye_yd/liulan.png" />12</span>
+									</div>
+
+									<!--<div class="clear"></div>-->
+								</li>
+							</ul>
+							<div class="clear"></div>
+							<div class="more" style="margin-top: 45px;">
+								<a href="javascript:;">更多最新会议></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script type="text/javascript" src="js/common/service.js"></script>
+	<script>
+		/**
+		 * 实例化vue对象
+		 */
+		var vm = new Vue({
+			el: '#vm',
+			data: {
+				mess: '',
+				pageName: '',
+				oldPageName: '',
+				imgsrc: ''
+			},
+			methods: {
+
+			},
+			mounted: this.retrieve
+		});
+
+		console.log(123)
+
+		function back1() {
+			localStorage.setItem('nowPage', vm.oldPageName)
+			$("#content").load(vm.oldPageName);
+		}
+
+		$(document).ready(function() {
+			vm.pageName = localStorage.getItem('name1')
+			//			
+			//			vm.oldPageName = '惠志斌'
+			vm.imgsrc = localStorage.getItem('imgsrc')
+			//			'img/research-team/zhuanjia_1.png'
+			//			localStorage.getItem('oldPage1')
+			ciyun();
+		});
+	</script>
+
+</html>

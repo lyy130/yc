@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心</title>
+    <link href="dist/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/xinwen.css">
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/personal.css">
+    <script src="dist/jquery/jquery.min.js"></script>
+    <script src="dist/html5shiv/html5shiv.min.js"></script>
+    <script src="dist/js/iscroll.js"></script>
+</head>
+<body>
+<!--顶部通栏-->
+<header>
+    <div class="container" style="padding-left: 8px;padding-right: 9px;">
+        <div class="row" style="padding-right: 13%;padding-left: 9.5%;">
+            <div class="top">
+                <div class="col-md-5 col-lg-5 col-sm-5 col-xs-5 " style=" margin-top: 20px;">
+                    <img src="img/logo.png" style="width: 100%;height: 100%" class="hidden-xs">
+                    <img src="img/logo.png" style="width: 100%;height: 100%" class="hidden-lg hidden-md hidden-sm">
+                </div>
+                <!--<div class="col-lg-4 col-md-4 col-sm-4 bj" style="height: 90px;"></div>-->
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 bj" style="margin-top: 2%;height: 68px;" >
+                        <span  class="ss" style="position: absolute;right: 6px;top: 28px;width: 132px;height: 27px;border-radius: 30px;background: rgba(255,255,255,0.31);">
+                            <input type="text" style="width: 100%;outline: none;border: none;background: rgba(255, 255, 255, 0.55);
+    border-radius: 10px;">
+                            <img src="img/sousuo.png" style=" position: absolute;right: 5px;top: 4px;height: 19px;">
+                        </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--移动端当行栏-->
+
+<div style="width: 100%;overflow: hidden;">
+    <div style="">
+        <div class="jd_cateLeft hidden-lg hidden-sm hidden-md">
+            <!--<div class="hd">-->
+            <ul class="col-xs-12 hidden-lg hidden-sm hidden-md yd-nav" >
+                <li class="">
+                    <a href="javascript:;" style="height: 28px">首页
+                        <span><img src="" alt=""></span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="javascript:;">百年一中
+                        <span class="iconfont">&#xe756;</span>
+                        <ul class="dh">
+                            <li><a href="javascript:;" class="ac">学校简介</a></li>
+                            <li><a href="javascript:;" class="ac">校友风采</a></li>
+                            <li><a href="javascript:;" class="ac">学校荣誉</a></li>
+                            <li><a href="javascript:;" class="ac">校长寄语</a></li>
+                            <li><a href="javascript:;" class="ac">美丽校园</a></li>
+                        </ul>
+
+                    </a>
+                </li>
+                <li class="">
+                    <a href="javascript:;">校园动态
+                        <span class="iconfont">&#xe756;</span>
+                        <ul class="dh">
+                            <li><a href="javascript:;" class="ac">校园时讯</a></li>
+                            <li><a href="javascript:;" class="ac">媒体关注</a></li>
+                            <li><a href="javascript:;" class="ac">通知公告</a></li>
+                            <li><a href="javascript:;" class="ac">墨池讲堂</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="javascript:;">党建专栏
+                        <span class="iconfont">&#xe756;</span>
+                        <ul class="dh">
+                            <li><a href="javascript:;" class="ac">主题活动</a></li>
+                            <li><a href="javascript:;" class="ac">理论学习</a></li>
+                            <li><a href="javascript:;" class="ac">廉政建设</a></li>
+                        </ul>
+                    </a>
+
+                </li>
+                <li class="">
+                    <a href="javascript:;">青春墨池
+                        <span class="iconfont">&#xe756;</span>
+                        <ul class="dh">
+                            <li><a href="javascript:;" class="ac">阳光学子</a></li>
+                            <li><a href="javascript:;" class="ac">阳光德育</a></li>
+                            <li><a href="javascript:;" class="ac">书香校园</a></li>
+                        </ul>
+                    </a>
+
+                </li>
+                <li class="">
+                    <a href="javascript:;">教育教学
+                        <span class="iconfont">&#xe756;</span>
+                        <ul class="dh">
+                            <li><a href="javascript:;" class="ac">课堂展示</a></li>
+                            <li><a href="javascript:;" class="ac">教学研究</a></li>
+                            <li><a href="javascript:;" class="ac">校本课程</a></li>
+                        </ul>
+                    </a>
+
+                </li>
+                <li class="">
+                    <a href="javascript:;">招生录取
+                        <span class="iconfont">&#xe756;</span>
+                        <ul class="dh">
+                            <li><a href="javascript:;" class="ac">中考招生</a></li>
+                            <li><a href="javascript:;" class="ac">高考信息</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="javascript:;">名师风采
+                        <span class="iconfont">&#xe756;</span>
+                        <ul class="dh">
+                            <li><a href="javascript:;" class="ac">最美教师</a></li>
+                            <li><a href="javascript:;" class="ac">教师荣誉</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="javascript:;"> 合作交流
+                        <span class="iconfont">&#xe756;</span>
+                        <ul class="dh" >
+                            <li><a href="javascript:;" class="ac">学校直通</a></li>
+                            <li><a href="javascript:;" class="ac">国际办学</a></li>
+                            <li><a href="javascript:;" class="ac">友好单位</a></li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+
+<!--导航栏-->
+<nav class="navbar wjs_nav hidden-xs"data-offset-top="40" style="background: white;height: 35px">       <!--data-spy="affix"指导航栏点击那个，锚点到哪-->
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" >                    <!-- data-toggle指的是是以什么事件，data-target是改变的dom-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <span class="wjs_icon wjs_icon_logo"></span>
+                <span class="wjs_icon wjs_icon_name"></span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar—collapse-1" style="padding-left: 6.5%;">
+            <ul class="nav navbar-nav sb_ul dhl" style="width: 90%;text-align: center; margin-top: -7px;">
+                <li class="active"><a href="#">首页</a></li>
+                <li class="dropdown">
+                    <a href="#" style="color: #7B3E36" class="dropdown-toggle" data-toggle="dropdown">百年一中
+                        <ul class="dropdown-menu mt-0" role="menu">
+                            <li><a href="javascript:;" class="ac">学校简介</a></li>
+                            <li><a href="javascript:;" class="ac">校友风采</a></li>
+                            <li><a href="javascript:;" class="ac">学校荣誉</a></li>
+                            <li><a href="javascript:;" class="ac">校长寄语</a></li>
+                            <li><a href="javascript:;" class="ac">美丽校园</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" style="color: #7B3E36" class="dropdown-toggle" data-toggle="dropdown">校园动态
+                        <ul class="dropdown-menu mt-0" role="menu">
+                            <li><a href="javascript:;" class="ac">校园时讯</a></li>
+                            <li><a href="javascript:;" class="ac">媒体关注</a></li>
+                            <li><a href="javascript:;" class="ac">通知公告</a></li>
+                            <li><a href="javascript:;" class="ac">墨池讲堂</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" style="color: #7B3E36" class="dropdown-toggle" data-toggle="dropdown">党建专栏
+                        <ul class="dropdown-menu mt-0" role="menu">
+                            <li><a href="javascript:;" class="ac">主题活动</a></li>
+                            <li><a href="javascript:;" class="ac">理论学习</a></li>
+                            <li><a href="javascript:;" class="ac">廉政建设</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" style="color: #7B3E36" class="dropdown-toggle" data-toggle="dropdown">青春墨池
+                        <ul class="dropdown-menu mt-0" role="menu">
+                            <li><a href="javascript:;" class="ac">阳光学子</a></li>
+                            <li><a href="javascript:;" class="ac">阳光德育</a></li>
+                            <li><a href="javascript:;" class="ac">书香校园</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" style="color: #7B3E36" class="dropdown-toggle" data-toggle="dropdown">教育教学
+                        <ul class="dropdown-menu mt-0" role="menu">
+                            <li><a href="javascript:;" class="ac">课堂展示</a></li>
+                            <li><a href="javascript:;" class="ac">教学研究</a></li>
+                            <li><a href="javascript:;" class="ac">校本课程</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" style="color: #7B3E36" class="dropdown-toggle" data-toggle="dropdown">招生录取
+                        <ul class="dropdown-menu mt-0" role="menu">
+                            <li><a href="javascript:;" class="ac">中考招生</a></li>
+                            <li><a href="javascript:;" class="ac">高考信息</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" style="color: #7B3E36" class="dropdown-toggle" data-toggle="dropdown">名师风采
+                        <ul class="dropdown-menu mt-0" role="menu">
+                            <li><a href="javascript:;" class="ac">最美教师</a></li>
+                            <li><a href="javascript:;" class="ac">教师荣誉</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" style="color: #7B3E36" class="dropdown-toggle" data-toggle="dropdown">合作交流
+                        <ul class="dropdown-menu mt-0" role="menu">
+                            <li><a href="javascript:;" class="ac">学校直通</a></li>
+                            <li><a href="javascript:;" class="ac">国际办学</a></li>
+                            <li><a href="javascript:;" class="ac">友好单位</a></li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--移动端最美教师-->
+<div class="hidden-lg hidden-md hidden-sm col-xs-12 ydteacher-R">
+    <ul>
+        <li>
+            <a href="javascript:;">个人信息</a>
+        </li>
+    </ul>
+    <button class="btn btn-edit hidden" type="button">确定</button>
+</div>
+<!--内容部分-->
+<div class="container nr">
+    <div class="row" style="padding-right: 4%;padding-left: 9.5%;">
+        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 teacher-L">
+            <div class="tishi">
+                <p class="title">个人中心</p>
+                <p><span class="active">首页</span> > 个人中心</p>
+            </div>
+            <hr>
+            <!--个人中心-->
+            <div class="header-content">
+                <div class="header-img-container" onmouseover="showEditTips(this, true);" onmouseout="showEditTips(this, false);" onclick="uploadAvator(this);">
+                    <img class="header" src="img/personal/header.png">
+                    <img class="edit-bg hidden" src="img/personal/header_edit_bg.png">
+                    <span class="hidden">更换头像</span>
+                    <input id="avatarSlect" type="file">
+                </div>
+                <div class="header-name-container">
+                    <!--<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>姓&nbsp;&nbsp;名</span>-->
+                    <input id="username" type="text" class="form-control" readonly placeholder="姓&nbsp;&nbsp;名">
+                    <img src="img/personal/edit.png" onclick="doEditUsername(this);"/>
+                    <button class="btn btn-edit hidden" type="button" onclick="submitUsername(this);">确定</button>
+                </div>
+            </div>
+            <div class="section section-detail">
+                <div class="row">
+                    <div class="header">
+                        <div class="pull-left">基本信息</div>
+                        <div class="pull-right" style="cursor: pointer" onclick="doEditDetail(this);"><span>编辑</span><img src="img/personal/edit.png"/></div>
+                        <button class="btn btn-edit hidden" type="button" onclick="submitDetail(this);">确定</button>
+                    </div>
+                </div>
+                <form role="form">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 text-center">
+                                <img src="img/personal/birth.png"/>
+                                <input id="birth" type="text" class="form-control" readonly placeholder="请输入出生日期">
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 text-center">
+                                <img src="img/personal/card.png"/>
+                                <input id="card" type="text" class="form-control" readonly placeholder="请输入身份证号">
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 text-center">
+                                <img src="img/personal/phone.png"/>
+                                <input id="phone" type="text" class="form-control" readonly placeholder="请输入电话号码">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 text-center">
+                                <img src="img/personal/college.png"/>
+                                <input id="college" type="text" class="form-control" readonly placeholder="请输入毕业学校">
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 text-center">
+                                <img src="img/personal/sex.png"/>
+                                <input id="sex" type="text" class="form-control" readonly placeholder="请选择性别">
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 text-center">
+                                <img src="img/personal/mail.png"/>
+                                <input id="email" type="text" class="form-control" readonly placeholder="请输入邮箱地址">
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="section section-honor">
+                <div class="row">
+                    <div class="header">
+                        <div class="pull-left">个人荣誉</div>
+                        <div class="pull-right" style="cursor: pointer"  onclick="doEditHonor(this);"><span>编辑</span><img src="img/personal/edit.png"/></div>
+                        <button class="btn btn-edit hidden" type="button" onclick="submitHonor(this);">确定</button>
+                    </div>
+                    <div class="honor-area">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img class="col-md-12 col-lg-12 col-sm-12 col-xs-12" src="img/personal/no_img.png"></div>
+                                <div class="swiper-slide"><img class="col-md-12 col-lg-12 col-sm-12 col-xs-12" src="img/personal/no_img.png"></div>
+                                <div class="swiper-slide"><img class="col-md-12 col-lg-12 col-sm-12 col-xs-12" src="img/personal/no_img.png"></div>
+                                <div class="swiper-slide"><img class="col-md-12 col-lg-12 col-sm-12 col-xs-12" src="img/personal/no_img.png"></div>
+                                <div class="swiper-slide"><img class="col-md-12 col-lg-12 col-sm-12 col-xs-12" src="img/personal/no_img.png"></div>
+                                <div class="swiper-slide"><img class="col-md-12 col-lg-12 col-sm-12 col-xs-12" src="img/personal/no_img.png"></div>
+                                <div class="swiper-slide"><img class="col-md-12 col-lg-12 col-sm-12 col-xs-12" src="img/personal/no_img.png"></div>
+                                <div class="swiper-slide"><img class="col-md-12 col-lg-12 col-sm-12 col-xs-12" src="img/personal/no_img.png"></div>
+                                <div class="swiper-slide"><img class="col-md-12 col-lg-12 col-sm-12 col-xs-12" src="img/personal/no_img.png"></div>
+                                <div class="swiper-slide"><img class="col-md-12 col-lg-12 col-sm-12 col-xs-12" src="img/personal/no_img.png"></div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Add Arrows -->
+                        </div>
+                        <div class="upload-container hidden">
+                            <div class="new-upload">
+                                <img src="img/personal/new.png"/>
+                                <p class="sczp">上传作品</p>
+                                <p class="small">格式jpg,png,gif</p>
+                                <p class="small">大小:小于10M</p>
+                                <input id="uploadHonor" type="file">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section section-family">
+                <div class="row">
+                    <div class="header">
+                        <div class="pull-left">家庭详情</div>
+                        <div class="pull-right" style="cursor: pointer"  onclick="doEditFamily(this);"><span>编辑</span><img src="img/personal/edit.png"/></div>
+                        <button class="btn btn-edit hidden" type="button" onclick="submitFamily(this);">确定</button>
+                    </div>
+
+                    <form class="form-horizontal family-detail" role="form">
+                        <div class="row">
+                            <div class="form-group col-md-5 col-lg-5 col-sm-5 col-xs-5 ">
+                                <label for="name1" class="col-md-3 col-lg-3 col-sm-3 col-xs-5 control-label">父亲：</label>
+                                <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                    <input type="text" readonly class="form-control" id="name1"
+                                           placeholder="请输入名字">
+                                </div>
+                            </div>
+                            <div class="form-group col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                <label for="unit1" class="col-md-3 col-lg-3 col-sm-3 col-xs-5 control-label">工作单位：</label>
+                                <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                    <input type="text" readonly class="form-control" id="unit1"
+                                           placeholder="请输入工作单位">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-5 col-lg-5 col-sm-5 col-xs-5">
+                                <label for="name2" class="col-md-3 col-lg-3 col-sm-3 col-xs-5 control-label">母亲：</label>
+                                <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                    <input type="text" readonly class="form-control" id="name2"
+                                           placeholder="请输入名字">
+                                </div>
+                            </div>
+                            <div class="form-group col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                <label for="unit2" class="col-md-3 col-lg-3 col-sm-3 col-xs-5 control-label">工作单位：</label>
+                                <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                    <input type="text" readonly class="form-control" id="unit2"
+                                           placeholder="请输入工作单位">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="section section-address">
+                <div class="row">
+                    <div class="header">
+                        <div class="pull-left">家庭住址详情</div>
+                        <div class="pull-right" style="cursor: pointer"  onclick="doEditAddress(this);"><span>编辑</span><img src="img/personal/edit.png"/></div>
+                        <button class="btn btn-edit hidden" type="button" onclick="submitAddress(this);">确定</button>
+                    </div>
+                    <div class="address-select">
+                        <div class="row">
+                            <!--省份选择-->
+                            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4" style="text-align: left; padding-left: 0px;padding-right: 8%">
+                                <select id="prov" disabled style="padding-left: 0px;" onchange="showCity(this)">
+                                    <option>=请选择省份=</option>
+                                </select>
+                            </div>
+
+                            <!--城市选择-->
+                            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+                                <select id="city" disabled onchange="showCountry(this)">
+                                    <option>=请选择城市=</option>
+                                </select>
+                            </div>
+
+                            <!--县区选择-->
+                            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4" style="text-align: right;padding-left: 8%;padding-right: 0px">
+                                <select id="country" disabled onchange="selecCountry(this)">
+                                    <option>=请选择县区=</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <textarea id="detail_address" readonly class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--pc端右边-->
+        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs teacher-R">
+            <ul >
+                <li>
+                    <span class="active"></span>
+                    <a href="javascript:;" class="active">个人信息</a>
+                </li>
+            </ul>
+            <button class="btn btn-baoming " type="button" onclick="">填写报名表</button>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div class="container dibu hidden-xs" style="margin: 0;padding: 0;width: 100%">
+    <ul class="foot-ul">
+        <li><a href="javascript:;">设为首页</a></li>
+        <li><a href="javascript:;">加入收藏</a></li>
+        <li><a href="javascript:;">联系站长</a></li>
+        <li><a href="javascript:;">友情链接</a></li>
+    </ul>
+    <p style="text-align: center;margin: 0;font-size: 10px;color: #DCD6D5;">版权所有 Copyright© 2018 宜昌市第一中学 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;站长：ZXY &nbsp;&nbsp;&nbsp;&nbsp;校长信箱：ycyz0001@126.com</p>
+    <p style="text-align: center;margin: 0;font-size: 10px;color: #DCD6D5;">地址：湖北省宜昌市思圣路17号 邮编：443004电话：(校办) 0717-6269159； (教务) 0717-6261626；(学工) 0717-6261109 鄂ICP备11018617号</p>
+</div>
+<!--移动端底部-->
+<div class="container yd-dibu hidden-lg hidden-sm hidden-md" style="margin: 0;padding: 0;width: 100%">
+    <p style="text-align: center;margin: 0;font-size: 10px;color: #DCD6D5;">Yichang No.1 High Shool 宜昌市第一中学</p>
+    <p style="text-align: center;margin: 0;font-size: 10px;color: #DCD6D5;">校长信箱：ycyz0001@126.com 技术提供支持：致趣科技</p>
+</div>
+<script>
+    window.onload = function () {
+        document.querySelector(".jd_cateLeft").addEventListener('touchmove',function (e) {
+            e.preventDefault();
+        });
+// 区域滚动效果：
+//     条件：一个容器装着一个容器的html结构，子容器大于父容器
+//     怎么操作：先找到大容器
+        new IScroll(document.querySelector(".jd_cateLeft"),{
+            scrollX: true,
+            scrollY: false
+        });
+
+    };
+    $('.yd-nav li').on('click',function () {
+        $(this).find('ul').show();
+        $(this).siblings().find('ul').hide()
+    })
+</script>
+<script src="citypicker/city.js"></script>
+<script src="dist/js/swiper.min.js"></script>
+<script>
+    $(function(){
+        /*Ajax上传至后台并返回图片的url*/
+        $("#avatarSlect").change(function () {
+            var formData=new FormData();
+            formData.append('avatar', $("#avatarSlect")[0].files[0]);  /*获取上传的图片对象*/
+            $.ajax({
+                url: '/upload_avatar/',
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function (args) {
+                    console.log(args);  /*服务器端的图片地址*/
+//                    $("#avatarPreview").attr('src','/'+args);  /*预览图片*/
+//                    $("#avatar").val('/'+args);  /*将服务端的图片url赋值给form表单的隐藏input标签*/
+                }
+            })
+        })
+
+        $("#uploadHonor").change(function () {
+            var formData=new FormData();
+            formData.append('image', $("#uploadHonor")[0].files[0]);  /*获取上传的图片对象*/
+            $.ajax({
+                url: '/upload_avatar/',
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function (args) {
+                    console.log(args);  /*服务器端的图片地址*/
+//                    $("#avatarPreview").attr('src','/'+args);  /*预览图片*/
+//                    $("#avatar").val('/'+args);  /*将服务端的图片url赋值给form表单的隐藏input标签*/
+                }
+            })
+        })
+
+    })
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 5,
+        freeMode: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
+    var prov = document.getElementById('prov');
+    var city = document.getElementById('city');
+    var country = document.getElementById('country');
+
+    /*用于保存当前所选的省市区*/
+    var current = {
+        prov: '',
+        city: '',
+        country: ''
+    };
+
+    /*自动加载省份列表*/
+    (function showProv() {
+        var len = provice.length;
+        for (var i = 0; i < len; i++) {
+            var provOpt = document.createElement('option');
+            provOpt.innerText = provice[i]['name'];
+            provOpt.value = i;
+            prov.appendChild(provOpt);
+        }
+    })();
+
+    /*根据所选的省份来显示城市列表*/
+    function showCity(obj) {
+        var val = obj.options[obj.selectedIndex].value;
+        if (val != current.prov) {
+            current.prov = val;
+        }
+        //console.log(val);
+        if (val != null) {
+            city.length = 1;
+            var cityLen = provice[val]["city"].length;
+            for (var j = 0; j < cityLen; j++) {
+                var cityOpt = document.createElement('option');
+                cityOpt.innerText = provice[val]["city"][j].name;
+                cityOpt.value = j;
+                city.appendChild(cityOpt);
+            }
+        }
+    }
+
+    /*根据所选的城市来显示县区列表*/
+    function showCountry(obj) {
+        var val = obj.options[obj.selectedIndex].value;
+        current.city = val;
+        if (val != null) {
+            country.length = 1; //清空之前的内容只留第一个默认选项
+            var countryLen = provice[current.prov]["city"][val].districtAndCounty.length;
+            if (countryLen == 0) {
+                return;
+            }
+            for (var n = 0; n < countryLen; n++) {
+                var countryOpt = document.createElement('option');
+                countryOpt.innerText = provice[current.prov]["city"][val].districtAndCounty[n];
+                countryOpt.value = n;
+                country.appendChild(countryOpt);
+            }
+        }
+    }
+
+    /*选择县区之后的处理函数*/
+    function selecCountry(obj) {
+        current.country = obj.options[obj.selectedIndex].value;
+    }
+</script>
+
+<script>
+    function showEditTips(self, bool){
+        if(bool){
+            $($(self).children()[1]).removeClass("hidden");
+            $($(self).children()[2]).removeClass("hidden");
+        }
+        else{
+            $($(self).children()[1]).addClass("hidden");
+            $($(self).children()[2]).addClass("hidden");
+        }
+    }
+
+    function doEditUsername(self){
+        $(self).addClass("hidden");
+        var usernameInput = $(self).prev();
+        $(self).prev().removeAttr("readonly");
+        $(self).next().removeClass("hidden");
+    }
+
+    function doEditDetail(self){
+        $(self).next().removeClass("hidden");
+        $(self).addClass("hidden");
+        $(self).parent().parent().next().find("input").removeAttr("readonly");
+    }
+    function doEditHonor(self){
+        $(self).next().removeClass("hidden");
+        $(self).addClass("hidden");
+        $(self).parent().next().find(".swiper-container").addClass("hidden");
+        $(self).parent().next().find(".upload-container").removeClass("hidden");
+    }
+    function doEditFamily(self){
+        $(self).next().removeClass("hidden");
+        $(self).addClass("hidden");
+        $(self).parent().next().find("input").removeAttr("readonly");
+    }
+    function doEditAddress(self){
+        $(self).next().removeClass("hidden");
+        $(self).addClass("hidden");
+        $(self).parent().next().find("select").removeAttr("disabled");
+        $(self).parent().next().find("textarea").removeAttr("readonly");
+    }
+
+    function submitUsername(self){
+        $(self).prev().prev().attr("readonly","readonly");
+        $(self).addClass("hidden");
+        $(self).prev().removeClass("hidden");
+    }
+
+    function submitDetail(self){
+        $(self).prev().removeClass("hidden");
+        $(self).addClass("hidden");
+        $(self).parent().parent().next().find("input").attr("readonly","readonly");
+        var birth = $("#birth");
+        var card = $("#card") ;
+        var phone = $("#phone") ;
+        var college = $("#college") ;
+        var sex = $("#sex") ;
+        var email = $("#email");
+    }
+    function submitHonor(self) {
+        $(self).prev().removeClass("hidden");
+        $(self).addClass("hidden");
+        $(self).parent().next().find(".swiper-container").removeClass("hidden");
+        $(self).parent().next().find(".upload-container").addClass("hidden");
+    }
+    function submitFamily(self) {
+        $(self).prev().removeClass("hidden");
+        $(self).addClass("hidden");
+        $(self).parent().next().find("input").attr("readonly","readonly");
+    }
+    function submitAddress(self) {
+        $(self).prev().removeClass("hidden");
+        $(self).addClass("hidden");
+        $(self).parent().next().find("select").attr("disabled","disabled");
+        $(self).parent().next().find("textarea").attr("readonly","readonly");
+    }
+    
+    function uploadAvator(self) {
+        
+    }
+</script>
+</body>
+</html>

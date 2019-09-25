@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* CSS Document
+    更多精品模板请访问：http://www.bootstrapmb.com
+*/
+h1{
+    margin: 0;
+}
+table{ border-collapse:collapse;}
+a,a:hover{
+    text-decoration: none;
+}
+img,a{border:0; text-decoration:none;}
+li{
+    list-style: none;
+}
+.clears{ clear:both;}
+
+img{ max-width:100%;}
+.width1003{width:1003px;margin:0 auto;}
+.fl{float:left;}
+.fr{float:right;}
+.red{color:#f00;}
+.height1{height:7px;}
+.height2{ height:30px;}
+.height3{ height:20px;}
+.font14{ font-size:14px;}
+.font12{ font-size:12px;}
+.alignLeft{ text-align:left;}
+.alignCenter{ text-align:center;}
+.alignRight{ text-align:right;}
+.green{color:#7ABD54;}
+.orange{color:#f60;}
+.hui{color:#999;}
+.swiper-pagination-bullet-active {
+    background: #b28950;
+    width: 50px;
+    border-radius: 4px;
+}
+.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet{
+    margin: 0 15px;
+}
+.header{width:100%;padding-top: 20px; padding-bottom: 20px;}
+.header .container{padding-right: 30px;}
+.logo{float:left;}
+.top-search{
+    float:right;
+    width:17.86em;
+    height:35px;
+    position: relative;
+    /*margin:45px 0 0 0px;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.query-line{
+    border-bottom: 1px solid #eee;
+}
+.disease{
+    width:13.9em;
+    height: 30px;
+    line-height: 30px;
+    border:1px solid #b18854;
+    border-right: none;
+    color: #999;
+    font-size: 0.64em;
+    outline: none;
+    padding-left: 0.26em;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+.query{
+    position: absolute;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.9em;
+    border:1px solid #b18854;
+    border-left:none;
+    padding-left: 1em;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.search-btn{
+    cursor: pointer;
+}
+.search-btn:before{
+    position: absolute;
+    z-index:1;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    content: '';
+    background: url(../img/sousuo.png);
+    background-size: 100% 100%;
+}
+.top-login{ float:right;height:35px;margin:43px 0 0 0px;}
+.top-login a{height:35px; line-height:35px; font-size:0.9em;color: #b18854 }
+.header-hr{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0;
+    border-top: 2px solid #b28750;
+}
+
+.banner .swiper-slide img{
+    width: 100%;
+    max-height: 351px;
+    object-fit: cover;
+}
+.banner-info{
+    position: absolute;
+    width: 100%;
+    bottom: 40px;
+    z-index: 999;
+}
+.banner-info .container{
+    height: 2em;
+}
+.banner-info .left{
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 20px;
+    margin-left: 8%;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: 13em;
+    background: rgba(0,0,0,0.7);
+    cursor: pointer;
+}
+.banner-info .right{
+    float: right;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 15px;
+    margin-right: 8%;
+    color: #fff;
+    font-size: 20px;
+    width: 5em;
+    letter-spacing: 2px;
+    background: rgba(0,0,0,0.7);
+    cursor: pointer;
+}
+/*nav*/
+.nav-toggle{width:45px; height:45px; line-height:45px; text-align:center; font-size:1em; cursor:pointer; float:right; display:none;}
+.nav-toggle .nav-close{ display:none;}
+.nav-toggle .nav-open{ display:block;}
+.nav-toggle.nav-toggle-s .nav-close{ display:block;}
+.nav-toggle.nav-toggle-s .nav-open{ display:none;}
+.nav{width:100%; height:50px;}
+.nav li{float:left;width:11.11%; height:50px; position:relative;font-size: 20px;}
+.nav li a{float:left;width:100%; height:50px; line-height:50px; font-size:0.9em;color:#702f27; text-align:center;font-size: 20px}
+.nav li a:hover{ background:#702f27;color:#fff;font-size: 20px;}
+.nav li a.navCur{ background:#702f27;color:#fff;}
+.nav .chilNav{ position:absolute;width:100%;left:0;top:49px; background:#fff; z-index:9999; display:none;border:#ddd 1px solid;}
+.nav .chilNav a{ float:none; display:block;height:35px; line-height:35px;color:#281110;border-bottom:#ddd 1px solid; font-size:0.85em;}
+.nav .chilNav a:hover{color:#fff; background:#702f27;}
+.nav li:hover .chilNav{ display:block;}

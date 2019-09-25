@@ -1,0 +1,764 @@
+﻿@charset "utf-8";
+/* CSS Document
+    更多精品模板请访问：http://www.bootstrapmb.com
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video, select{margin: 0;padding: 0;border: 0;}
+table{ border-collapse:collapse;}
+body{ font-family:"汉仪旗黑50s","Helvetica Neue", "Helvetica", "Arial", "sans-serif";font-size:20px;background-color:#f2f2f2;background-image: url(../img/bg.png);background-repeat: no-repeat;background-size: cover;}
+img,a{border:0; text-decoration:none;}
+ol, ul {list-style: none; }
+.clears{ clear:both;}
+a{color:#333;-webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;transition: all .3s ease-out;}
+a:hover{color:#F00;-webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;transition: all .3s ease-out; text-decoration:none;}
+img{ max-width:100%;}
+.width1003{width:1003px;margin:0 auto;}
+.fl{float:left;}
+.fr{float:right;}
+.red{color:#f00;}
+.height1{height:7px;}
+.height2{ height:30px;}
+.height3{ height:20px;}
+.font14{ font-size:14px;}
+.font12{ font-size:12px;}
+.alignLeft{ text-align:left;}
+.alignCenter{ text-align:center;}
+.alignRight{ text-align:right;}
+.green{color:#7ABD54;}
+.orange{color:#f60;}
+.hui{color:#999;}
+.swiper-pagination-bullet-active {
+    background: #b28950;
+    width: 50px;
+    border-radius: 4px;
+}
+.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet{
+    margin: 0 15px;
+}
+
+/*content*/
+.content{
+    padding:40px 0 120px 0;
+}
+.content .title{
+    color: #181818;
+    font-family: '汉仪旗黑80S', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size:1.2em;
+    font-weight:normal;
+    letter-spacing: 0.2em;
+    padding: 0px 0px 0px 20px;
+}
+.content .more{
+    float: right;
+    cursor: pointer;
+}
+.content .more span{
+    font-size: 0.7em;
+    color: #a18854;
+    margin-right: 10px;
+}
+.content .more img{
+    width: 16px;
+    height: 16px;
+}
+
+.title span{
+    color:#6c6c6c;
+    letter-spacing: 0px;
+}
+.left-section{
+    padding-right: 50px;
+    margin-bottom: 40px;
+}
+.right-section{
+    padding-right: 30px;
+    margin-bottom: 40px;
+}
+.column-right{
+    width: 100%;
+    height: 21px;
+    background-image: url(/Public/home/img/fenlan1.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: cover;
+}
+.column-left{
+    width: 100%;
+    height: 21px;
+    background-image: url(/Public/home/img/fenlan2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.column-teacher{
+    width: 100%;
+    height: 21px;
+    background-image: url(/Public/home/img/fenlanteacher.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: cover;
+}
+.column-common{
+    width: 100%;
+    height: 21px;
+    background-image: url(/Public/home/img/fenlan3.png);
+    background-repeat: repeat-x;
+}
+.row1 .swiper-container{
+    height: 240px;
+    margin: 40px auto 20px auto;
+}
+.row1 .swiper-container .swiper-slide{
+    height: 180px;
+    cursor: pointer;
+}
+.row1 .swiper-container .swiper-slide img{
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+}
+.row1 .swiper-container .swiper-slide .news-content{
+    color: #21211e;
+    width: 48%;
+    height: 100%;
+    line-height: 1.5;
+    float: right;
+    padding-right: 0.8em;
+}
+.row1 .swiper-container .swiper-slide .news-content .news-title{
+    font-family: "汉仪旗黑75s", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    max-height: 1.4em;
+    overflow: hidden;
+    letter-spacing: 0.3em;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+.row1 .swiper-container .swiper-slide .news-content .news-title:hover{
+    color: #b18854;
+    text-decoration: underline;
+}
+.row1 .swiper-container .swiper-slide .news-content .news-subtitle{
+    font-family: "汉仪旗黑50s", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size:0.8em;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    margin-top: 0.5em;
+    max-height: 3em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+.row1 .swiper-container .swiper-slide .news-content .news-detail{
+    font-size:0.7em;
+    margin-top: 0.8em;
+    max-height: 4.5em;
+    line-height: 1.6em;
+    letter-spacing: 0.1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+.row1 .swiper-container .swiper-slide .news-content .news-time{
+    font-size:0.6em;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    margin-top: 0.5em;
+    text-align: right;
+}
+
+.content-nav{
+    width:100%;
+    margin-bottom: 40px;
+}
+.content-nav li{
+    width:100%;
+    height:45px;
+    margin-top: 10px;
+    position:relative;
+    border-bottom: 1px dashed #5e2a1f;
+    cursor: pointer;
+}
+.content-nav li .content-wrapper{
+    background-image: url(/Public/home/img/down.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 20px;
+}
+.content-nav li .content-wrapper:hover{
+    background-image: url(/Public/home/img/up.png);
+}
+.content-nav li .title{
+    color: #21211e;
+    padding: 0;
+    width: 70%;
+    height: 45px;
+    float: left;
+    line-height: 45px;
+    font-family: 汉仪旗黑50s, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 0.9em;
+    overflow: hidden;
+    letter-spacing: 0.2em;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+.content-nav li img{
+    height: 20px;
+    margin-top: 12px;
+}
+.content-nav li .time{
+    color: #8e8e8e;
+    font-size: 0.8em;
+    text-align: center;
+    padding-right: 15px;
+    float: left;
+    width: 30%;
+    height: 45px;
+    line-height: 45px;
+}
+
+.content-nav .chilNav{
+    position:absolute;
+    width:100%;
+    left:0;
+    top:44px;
+    background:#fff;
+    z-index:9999;
+    display:none;
+    color: #8e8e8e;
+    font-size: 0.7em;
+    padding: 10px 5px;
+    line-height: 2em;
+    border:#ddd 1px solid;
+}
+.content-nav .chilNav a:hover{color:#fff; background:#702f27;}
+.content-nav li:hover .chilNav{ display:block;}
+.row1 .right-section .party-info{
+    height: 190px;
+    margin: 40px auto 10px auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.row1 .right-section .party-info:hover{
+    text-decoration: underline;
+    color: #a18854;
+}
+
+.row1 .right-section .party-info img{
+    width: 100%;
+    height: 155px;
+    object-fit: cover;
+}
+.row1 .right-section .party-info .title{
+    color: #21211e;
+    font-family: '汉仪旗黑80S', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding: 0;
+    width: 100%;
+    height: 35px;
+    float: left;
+    text-align: center;
+    line-height: 35px;
+    font-size: 1em;
+    overflow: hidden;
+    letter-spacing: 0;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+.row1 .right-section .party-info .title:hover{
+    text-decoration: underline;
+    color: #a18854;
+}
+.ellipsis1{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+.ellipsis2{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+.ellipsis3{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+.ellipsis4{
+    position: relative; line-height: 20px; max-height: 100px;overflow: hidden;}
+.font-head::after{content: "..."; position: absolute; bottom: 0; right: 0; padding-left: 40px;
+    background: -webkit-linear-gradient(left, transparent, transparent  55%);
+    background: -o-linear-gradient(right, transparent, transparent  55%);
+    background: -moz-linear-gradient(right, transparent, transparent  55%);
+    background: linear-gradient(to right, transparent, transparent  55%);
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+    /*display: -webkit-box;*/
+    /*-webkit-line-clamp: 4;*/
+    /*-ms-line-clamp: 4;*/
+    /*-webkit-box-orient:*/
+    /*-webkit-box-orient: vertical;*/
+    /*word-break: break-all;*/
+}
+ul.party-list{
+    margin-bottom: 15px;
+}
+ul.party-list li{
+    height: 135px;
+    padding: 20px 0px;
+    border-bottom: 1px dashed #5e2a1f;
+}
+ul.party-list li:last-child{
+    border-bottom: 0px dashed #5e2a1f;
+}
+
+ul.party-list li .date{
+    width: 95px;
+    height: 95px;
+    background-color: #dcdcdc;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    float: left;
+}
+
+ul.party-list li .date .month{
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 0.3em;
+    padding-left: 0.2em;
+    margin-top: 0.5em;
+    font-weight: 700;
+    color: #b1884a;
+}
+.font-head{
+    font-family: "汉仪旗黑50s","Helvetica Neue", "Helvetica", "Arial", "sans-serif"!important;
+}
+ul.party-list li .date .day{
+    color: #b1884a;
+    font-size: 1.1em;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+ul.party-list li .info{
+    max-width: 240px;
+    float: left;
+}
+ul.party-list li .info .title{
+    cursor: pointer;
+    height: 2.4em;
+    line-height: 1.2;
+    color: #a18854;
+    font-size: 1em;
+    padding-left: 20px;
+}
+
+ul.party-list li .info .title:hover{
+    text-decoration: underline;
+}
+ul.party-list li .info .time{
+    height: 1.2em;
+    line-height: 1.2em;
+    color: #8e8e8e;
+    font-size: 0.6em;
+    padding-left: 20px;
+    margin-top: 0.2em;
+}
+ul.party-list li .info .detail{
+    height: 2.5em;
+    line-height: 1.3;
+    margin-top: 0.5em;
+    padding-left: 20px;
+    letter-spacing: 0.2em;
+    color: #21211e;
+    font-size: 0.7em;
+}
+
+.row2 .left-section .school-news {
+    margin: 40px auto 10px auto;
+    text-align: center;
+}
+.row2 .left-section .school-news ul li{
+    margin-bottom: 20px;
+    margin-top: 49px;
+}
+.row2 .left-section .school-news ul li img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    /*border-radius: 8px;*/
+}
+.school-news ul li:nth-of-type(2){
+    line-height: 2.7;
+}
+.row2 .left-section .school-news ul li .more img{
+    width: 16px;
+    height: 16px;
+}
+.row2 .left-section .school-news ul li .title{
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+    color:#2a2f33;
+    text-align: left;
+    padding-left: 0px;
+    margin-top: 10px;
+}
+.row2 .left-section .school-news ul li .title:hover{
+    color: #b18854;
+    text-decoration: underline;
+}
+.row2 .left-section .school-news ul li .subtitle{
+    font-size: 0.8em;
+    color:#2c3035;
+    text-align: left;
+    padding-left: 0px;
+    margin-top: 20px;
+}
+.row2 .left-section .school-news ul li .subtitle span{
+    margin-right: 2em;
+}
+.row2 .left-section .school-news ul li .detail{
+    font-size: 0.9em;
+    height: 8em;
+    text-indent:2em;
+    line-height: 2;
+    color:#2c3035;
+    text-align: left;
+    padding-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.row2 .right-section .card .title{
+    width: 100%;
+    color: #181818;
+    font-family: '汉仪旗黑80S', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    padding: 0px 0px 0px 20px;
+}
+.row2 .right-section .teach-group ul{
+    width: 100%;
+    background-color: white;
+    margin-top: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 6%;
+    border-radius: 3px;
+}
+
+.row2 .right-section .teach-group li{
+    width: 50%;
+    height: 40px;
+    float: left;
+    text-align: left;
+    list-style-type:none;
+    padding-left: 10%;
+    font-size: 0.7em;
+    line-height: 40px;
+    color: #888;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.row2 .right-section .teach-group li a{
+    cursor: pointer;
+}
+
+.row2 .right-section .teach-group li a:hover{
+    color: #b18854;
+    text-decoration: underline;
+}
+.row2 .right-section .share-group{
+    margin-top: 44px;
+}
+.row2 .right-section .share-group ul{
+    width: 100%;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+.row2 .right-section .share-group ul li{
+    cursor: pointer;
+    width: 20%;
+    height: 100px;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.share-list .weibo {
+    background-image: url(/Public/home/img/weibo.png);
+}
+.share-list .qq {
+    background-image: url(/Public/home/img/qq.png);
+}
+.share-list .weixin {
+    background-image: url(/Public/home/img/weixin.jpg);
+}
+.share-list .pengyouquan {
+    background-image: url(/Public/home/img/pengyouquan.png);
+}
+.share-list .youxiang {
+    background-image: url(/Public/home/img/youxiang.png);
+}
+
+.share-list .weibo:hover {
+    background-image: url(/Public/home/img/weibo_actived.png);
+}
+.share-list .qq:hover {
+    background-image: url(/Public/home/img/qq_actived.png);
+}
+.share-list .weixin:hover {
+    background-image: url(/Public/home/img/weixin_actived.png);
+}
+.share-list .pengyouquan:hover {
+    background-image: url(/Public/home/img/pengyouquan_actived.png);
+}
+.share-list .youxiang:hover {
+    background-image: url(/Public/home/img/youxiang_actived.png);
+}
+
+.row2 .right-section .book-group{
+    margin-top: 44px;
+}
+.row2 .right-section .book-group ul{
+    width: 100%;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 3px;
+    padding: 20px 20px 20px 30px;
+}
+
+ul.book-list li{
+    height: 100px;
+    padding: 15px 0px;
+    border-bottom: 1px dashed #ede1cc;
+}
+ul.book-list li:last-child{
+    border-bottom: 0px dashed #ede1cc;
+}
+
+.row2 .right-section .book-group ul li img{
+    width: 40%;
+    height: 70px;
+    object-fit: cover;
+    float: left;
+}
+
+.row2 .right-section .book-group ul li .title{
+    font-family: "汉仪旗黑70s", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    width: 60%;
+    height: 4.2em;
+    float: left;
+    font-size: 0.8em;
+    text-align: left;
+    line-height: 1.1;
+    color: #242424;
+    cursor: pointer;
+}
+
+.row2 .right-section .book-group ul li .title:hover{
+    color: #b18854;
+    text-decoration: underline;
+}
+.row3 .swiper-container{
+    height: 400px;
+    margin: 20px auto 20px auto;
+}
+
+.row3 .swiper-container .swiper-slide img{
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.row3 .swiper-container .swiper-slide .teacher-content{
+    margin-top: 10px;
+}
+.row3 .swiper-container .swiper-slide .teacher-content .teacher-title{
+    width: 100%;
+    font-family: 汉仪旗黑75s, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 0.9em;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+}
+.row3 .swiper-container .swiper-slide .teacher-content .teacher-title:hover{
+    color: #b18854;
+    text-decoration: underline;
+}
+
+.row3 .swiper-container .swiper-slide .teacher-content .teacher-detail{
+    font-family: 汉仪旗黑70s, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    width: 100%;
+    font-size: 0.9em;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-top: 20px;
+}
+.brand-wrap{
+    max-width: 1150px;
+    margin-top: 20px;
+    position: relative;
+}
+.brand-bg{
+    width: 216px;
+    position: absolute;
+    left: 15px;
+    top: 11px;
+}
+.brand{
+    margin-left: 16px;
+    border: 3px solid #ad8351;
+    height: 140px;
+    border-radius: 26px;
+}
+.brand .content{
+    padding: 10px 10px 10px 220px;
+    font-size: 0.7em;
+    font-weight: 700;
+    line-height: 2;
+}
+.brand .content p{
+    height: 2em;
+    line-height: 2em;
+}
+/*index-new*/
+.index-new{
+    padding:20px 0;
+}
+.index-new .new{
+    width:425px;
+}
+.new li{
+    height:43px;
+    line-height:43px;
+    font-size:1.4em;
+    position:relative;
+}
+.new li a{
+    display:inline-block;
+    width:70%;
+    overflow:hidden;
+    height:43px;
+}
+.new li span{
+    position:absolute;
+    right:0;
+    top:0;
+    color:#666;
+}
+.new li .downs{
+    position:absolute;
+    right:0;
+    top:5px;
+    width:80px;
+    height:25px;
+    background:#f1f1f1;
+    text-align:center;
+    line-height:25px;
+}
+
+.inde-new-img{
+    width:560px;
+}
+
+/*content-left*/
+.content-left{
+    float:left;
+    width:270px;
+    background:#f9fafc;
+    padding:7px;
+}
+.left-title{
+    padding:7px 0;
+    font-size:1.8em;
+    border-bottom:#ccc 1px solid;
+}
+.lefticon{
+    padding:8px 0;
+    text-align:center;
+}
+.lefticon a{
+    display:inline-block;
+    padding:0 15px;
+}
+.content-right{
+    float:right;
+    width:724px;
+    padding:10px;
+    background:#f9fafc;
+}
+.right-title{
+    font-size:1.6em;
+    padding:7px 0;
+    border-bottom:#ccc 1px solid;
+}
+.Article{
+    padding:10px;
+    line-height:24px;
+}
+
+.tousu{padding:10px;}
+.tousu input,.tousu textarea{
+    border:0;
+    background:none;
+    margin:0;
+    padding:0;
+    display:block;
+}
+.tousu .toutext{
+    width:100%;
+    height:35px;
+    border:#999 1px solid;
+}
+.tousu label{
+    display:block;
+    height:35px;
+    line-height:35px;
+    font-size:1.4em;
+}
+.tousu textarea{
+    width:100%;
+    height:100px;
+    border:#999 1px solid;
+}
+.tousub{
+    padding:10px 0 0 0;
+}
+.tousub input{
+    height:40px;
+    width:150px;
+    text-align:center;
+    background:#ec6c2c;
+    color:#fff;
+    font-size:1.4em;
+}
